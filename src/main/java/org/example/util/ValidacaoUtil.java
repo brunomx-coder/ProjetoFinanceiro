@@ -4,15 +4,15 @@ import java.util.Calendar;
 import java.util.Date;
 
 public class ValidacaoUtil {
-    public boolean vaziaOuNula(String entrada){
+    public boolean verificacaoEntrada(String entrada){
         return entrada == null || entrada.trim().isEmpty();
     }
 
-    public boolean vaziaOuNula(Double valor){
+    public boolean verificacaoEntrada(Double valor){
         return  valor == null ||valor.doubleValue() == 0.0 || valor.isInfinite() || valor.isNaN();
     }
 
-    public boolean vaziaOuNula(Date data){
+    public boolean verificacaoEntrada(Date data){
         if(data == null){
             return true;
         }

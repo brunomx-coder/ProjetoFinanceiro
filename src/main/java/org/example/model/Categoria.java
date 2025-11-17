@@ -1,6 +1,10 @@
 package org.example.model;
 
-public class Categoria {
+import org.example.util.ValidacaoUtil;
+
+public class Categoria extends Modelos {
+    ValidacaoUtil valida = new ValidacaoUtil();
+
     private int id;
     private String nome;
     private String tipoMovimento;
@@ -15,6 +19,7 @@ public class Categoria {
     }
 
     public void setNome(String nome){
+        super.verificacao(nome);
         this.nome = nome;
     }
 
@@ -23,6 +28,7 @@ public class Categoria {
     }
 
     public void setTipoMovimento(String tipo){
+        super.verificacao(tipo);
         this.tipoMovimento = tipo;
     }
 

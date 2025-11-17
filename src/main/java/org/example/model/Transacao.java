@@ -2,7 +2,7 @@ package org.example.model;
 
 import java.util.Date;
 
-public class Transacao {
+public class Transacao extends Modelos {
     private int id;
     private Date data;
     private String descricao;
@@ -32,6 +32,7 @@ public class Transacao {
     }
 
     public void setDescricao(String descricao) {
+        super.verificacao(descricao);
         this.descricao = descricao;
     }
 
@@ -40,6 +41,7 @@ public class Transacao {
     }
 
     public void setData(Date data) {
+        super.verificacao(data);
         this.data = data;
     }
 
@@ -48,6 +50,7 @@ public class Transacao {
     }
 
     public void setTipo(String tipo) {
+        super.verificacao(tipo);
         this.tipo = tipo;
     }
 
@@ -56,6 +59,7 @@ public class Transacao {
     }
 
     public void setParcela(String parcela) {
+        super.verificacao(parcela);
         this.parcela = parcela;
     }
 
@@ -64,6 +68,7 @@ public class Transacao {
     }
 
     public void setFixaOuVariavel(String fixaOuVariavel) {
+        super.verificacao(fixaOuVariavel);
         this.fixaOuVariavel = fixaOuVariavel;
     }
 
@@ -72,6 +77,7 @@ public class Transacao {
     }
 
     public void setValor(double valor) {
+        super.verificacao(valor);
         this.valor = valor;
     }
 
